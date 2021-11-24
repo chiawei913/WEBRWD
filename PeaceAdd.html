@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺北市警察局 網路報案</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" sizes="192x192" href="images/ico.jpg" />
+
+
+    <!-- CSS only -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+
+    <script src="js/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+<!-- container start -->
+<div id="container">
+
+    <!-- content start -->
+    <div id="content">
+        <main class="PeaceAdd">
+
+
+            <form action="">
+
+                <article class="case_user">
+
+                    <p>標記【<span class="color_red">*</span>】者，請務必填寫。</p>
+                    <h5>治安風水師檢測申請 | <a href="PeaceSearch.aspx">治安風水師檢測查詢</a></h5>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>現居住臺北市之住戶：</label>
+                        <select name="ddlCitizen" id="ddlCitizen" class="form-select">
+                            <option value="Y">是</option>
+                            <option value="N">否</option>
+                        </select>
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator2" class="color_red" style="display: none;">現居住臺北市之住戶必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>姓名：</label>
+                        <input name="txtUser_name" id="txtUser_name" type="text" class="form-control" autocomplete="off" >
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator3" class="color_red" style="display: none;">姓名必填</span>
+                    </div>
+    
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>性別</label>
+                        <div class="type_radio">
+                            <input id="genderM" class="form-check-input" type="radio" name="gernder" value="genderM" checked="checked">
+                            <label class="form-check-label" for="genderM">男 Male</label>
+                            <input id="genderF" class="form-check-input" type="radio" name="gernder" value="genderF">
+                            <label class="form-check-label" for="genderF">女 Female</label>
+                        </div>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>年齡：</label>
+                        <input name="txtUser_year" id="txtUser_year" type="text" class="form-control" autocomplete="off">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator10" class="color_red" style="display: none;">年齡必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>身分證字號 / 護照號碼：</label>
+                        <input name="txtUser_ssn" id="txtUser_ssn" type="text" class="form-control" autocomplete="off">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator5" class="color_red" style="display: none;">身分證字號 / 護照號碼必填</span>
+                    </div>
+
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>檢測地址：</label>
+                        <div class="layout_PA_item_2">
+                            <select name="ddlAddress_area" id="ddlAddress_area" class="form-select">
+                                <option value="">---請選擇---</option>
+                                <option value="松山區">臺北市：松山區</option>
+                                <option value="信義區">臺北市：信義區</option>
+                                <option value="大安區">臺北市：大安區</option>
+                                <option value="中山區">臺北市：中山區</option>
+                                <option value="中正區">臺北市：中正區</option>
+                                <option value="大同區">臺北市：大同區</option>
+                                <option value="萬華區">臺北市：萬華區</option>
+                                <option value="文山區">臺北市：文山區</option>
+                                <option value="南港區">臺北市：南港區</option>
+                                <option value="內湖區">臺北市：內湖區</option>
+                                <option value="士林區">臺北市：士林區</option>
+                                <option value="北投區">臺北市：北投區</option>                            </select>
+                            <input name="txtAddress" id="txtAddress" type="text" class="form-control" placeholder="例如:延平南路96號7樓，請用半形阿拉伯數字填寫。">
+                        </div>
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator4" class="color_red" style="display: none;">檢測地址必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>預約檢測時間：</label>
+                        <div class="layout_PA_item_2-1">
+                            <input name="txtSchedule_date" id="txtSchedule_date" type="text" class="form-control">
+                            <select name="ddlSchdule_time" id="ddlSchdule_time" class="form-select">
+                                <option value="上午">上午</option>
+	                            <option value="下午">下午</option>
+                            </select>
+                        </div>
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator6" class="color_red" style="display: none;">預約檢測時間必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>家中是否遭竊：</label>
+                        <div class="layout_PA_item_3-2">
+                            <select name="ddlSteal" id="ddlSteal" class="form-select">
+                                <option value="Y">是</option>
+                                <option value="N">否</option>
+                            </select> 
+                            遭竊時間：
+                            <input name="txtSteal_date" id="txtSteal_date" type="text" class="form-control" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>行動電話：</label>
+                        <input name="txtMobile" id="txtMobile" type="text" class="form-control">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator8" class="color_red" style="display: none;">行動電話必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>聯絡電話：</label>
+                        <input name="txtPhone" id="txtPhone" type="text" class="form-control">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator7" class="color_red" style="display: none;">聯絡電話必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title">E-Mail：</label>
+                        <input name="txtEmail" id="txtEmail" type="text" class="form-control" autocomplete="off">
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>申請資格：</label>
+                        <select name="ddlUser_category" id="ddlUser_category" class="form-select">
+                            <option value="現住房屋所有人">現住房屋所有人</option>
+                            <option value="現租人">現租人</option>
+                            <option value="前兩者同戶籍之眷屬並具有法律行為能力者">前兩者同戶籍之眷屬並具有法律行為能力者</option>
+                        </select>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>曾經接受防竊安全檢測</label>
+                        <div class="type_radio">
+                            <input id="peacebefore1" name="peacebefore" value="peacebefore1" class="form-check-input" type="radio" checked="checked">
+                            <label for="peacebefore1" class="form-check-label" >是</label>
+                            <input id="peacebefore2" name="peacebefore" value="peacebefore2" class="form-check-input" type="radio" >
+                            <label for="peacebefore2" class="form-check-label" >否</label>
+                        </div>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>宣導單位：</label>
+                        <div class="layout_PA_item_2-1fr">
+                            <select name="ddlProvide_unit" id="ddlProvide_unit" class="form-select">
+                                <option value="">---請選擇---</option>
+                                <option value="大同分局">大同分局</option>
+                                <option value="萬華分局">萬華分局</option>
+                                <option value="中山分局">中山分局</option>
+                                <option value="大安分局">大安分局</option>
+                                <option value="中正第一分局">中正第一分局</option>
+                                <option value="中正第二分局">中正第二分局</option>
+                                <option value="松山分局">松山分局</option>
+                                <option value="信義分局">信義分局</option>
+                                <option value="文山第一分局">文山第一分局</option>
+                                <option value="文山第二分局">文山第二分局</option>
+                                <option value="南港分局">南港分局</option>
+                                <option value="內湖分局">內湖分局</option>
+                                <option value="士林分局">士林分局</option>
+                                <option value="北投分局">北投分局</option>
+                                <option value="總局">總局</option>
+                                <option value="其他">其他</option>
+                            </select>
+                            <span style="display: none;"></span>                    
+                            <span class="color_red">不確定單位請選其他</span>
+                        </div>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title">宣導人姓名：</label>
+                        <input name="txtProvider_user" id="txtProvider_user" type="text" class="form-control">
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>請輸入驗證碼：</label>
+                        <div class="layout_PA_item_3-A">
+                            <input name="txtCaptcha" id="txtCaptcha" type="text" class="form-control" autocomplete="off">
+                            <img src="/ValidatePage.aspx" alt="點擊刷新" id="imgValidateCode" style="width: 100px; height: 30px; line-height: 30px; vertical-align: middle;" />
+                            <span id="RequiredFieldValidator13" class="color_red" style="display: none;">請輸入驗證碼</span>                                
+                        </div>
+                    </div>
+
+                    <div class="declare">
+                        <input class="form-check-input" type="radio" name="CheckBox1" id="CheckBox1">
+                        <label class="form-check-label">
+                            <p>我已閱讀本局<a target="_blank" href=https://police.gov.taipei/ct.asp?xItem=8259905&ctNode=47044&mp=108001" class="color_blue">【個人資料收集聲明及服務條款】</a> 暨相關 <a target="_blank" href="https://police.gov.taipei/ct.asp?xItem=3580328&ctNode=45108&mp=108001" class="color_blue">【隱私權政策】</a></p>
+                        </label>
+                    </div>
+
+
+                </article>
+
+                <div class="button_box">
+                    <input type="submit" name="btnSubmit" value="送出" onclick="return confirm(&#39;確定送出嗎？&#39;);WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;addGroup&quot;, &quot;&quot;, false, false))" id="btnSubmit" class="system_form_box button btn_blue" />
+                    <input type="submit" name="btnReset" value="重設" onclick="return confirm(&#39;確定重設嗎？&#39;);" id="btnReset" class="system_form_box button btn_red" />
+                </div>
+
+                <div id="div2" class="system_form_box" style="display: none;">
+                    <strong>
+                        <p>親愛的市民 <span style="color: Blue"><span id="lblName"></span></span> 您好：</p>
+                        <p class="color_red">您已完成檢測申請作業！</p>
+                        <p>
+                            已收到您的檢測申請！您的檢測申請的編號為 <span style="color: Blue"><span id="lblActivate_no"></span></span>
+                            ，請記住您的檢測申請的編號與查詢識別密碼（<span style="color: red"><span id="lblCode"></span></span>）
+                            ，以便進度查詢！
+                        </p>
+                        <p>再次感謝您的申請，非常感謝！</p>
+                    </strong>
+                    <button type="button" onclick="location.href='PeaceAdd.aspx'" style="text-align:center">返回治安風水師檢測申請</button>
+                    <button type="button" onclick="location.href='PeaceSearch.aspx'" style="text-align:center">返回治安風水師檢測查詢</button>
+               </div>                
+
+            </form>
+        </main>
+    </div>
+    <!-- content end -->
+
+</div>
+<!-- container end -->
+
+<!-- ================ jvascript ================ -->
+
+<!-- bootstrap js -->
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

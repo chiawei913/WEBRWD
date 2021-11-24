@@ -1,0 +1,343 @@
+@charset "UTF-8";
+/* 不改變文字單位 */
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ========================================================================== HTML5 display definitions ========================================================================== */
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/** Correct `block` display not defined in IE 8/9. */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+
+/** Correct `inline-block` display not defined in IE 8/9. */
+audio, canvas, video { display: inline-block; }
+
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) { display: none; height: 0; }
+
+/** Address styling not present in IE 8/9. */
+[hidden] { display: none; }
+
+/* ========================================================================== Base ========================================================================== */
+/** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+html { font-family: sans-serif; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -ms-text-size-adjust: 100%; /* 2 */ }
+
+/** Remove default margin. */
+body { margin: 0; }
+
+/* ========================================================================== Links ========================================================================== */
+/** Address `outline` inconsistency between Chrome and other browsers. */
+a:focus { outline: thin dotted; }
+
+/** Improve readability when focused and also mouse hovered in all browsers. */
+a:active, a:hover { outline: 0; }
+
+/* ========================================================================== Typography ========================================================================== */
+/** Address variable `h1` font size within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome. */
+h1 { font-size: 2em; }
+
+/** Address styling not present in IE 8/9, Safari 5, and Chrome. */
+abbr[title] { border-bottom: 1px dotted; }
+
+/** Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+b, strong { font-weight: bold; }
+
+/** Address styling not present in Safari 5 and Chrome. */
+dfn { font-style: italic; }
+
+/** Address styling not present in IE 8/9. */
+mark { background: #ff0; color: #000; }
+
+/** Correct font family set oddly in Safari 5 and Chrome. */
+code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+
+/** Improve readability of pre-formatted text in all browsers. */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+/** Set consistent quote types. */
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/** Address inconsistent and variable font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+/* ========================================================================== Embedded content ========================================================================== */
+/** Remove border when inside `a` element in IE 8/9. */
+img { border: 0; }
+
+/** Correct overflow displayed oddly in IE 9. */
+svg:not(:root) { overflow: hidden; }
+
+/* ========================================================================== Figures ========================================================================== */
+/** Address margin not present in IE 8/9 and Safari 5. */
+figure { margin: 0; }
+
+/* ========================================================================== Forms ========================================================================== */
+/** Define consistent border, margin, and padding. */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/** 1. Correct `color` not being inherited in IE 8/9. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend { border: 0; /* 1 */ padding: 0; /* 2 */ }
+
+/** 1. Correct font family not being inherited in all browsers. 2. Correct font size not being inherited in all browsers. 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome. */
+button, input, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 2 */ margin: 0; /* 3 */ }
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+button, input { line-height: normal; }
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ }
+
+/** Re-set default cursor for disabled elements. */
+button[disabled], html input[disabled] { cursor: default; }
+
+/** 1. Address box sizing set to `content-box` in IE 8/9. 2. Remove excess padding in IE 8/9. */
+input[type="checkbox"], input[type="radio"] { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome. 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome (include `-moz` to future-proof). */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */ -webkit-box-sizing: content-box; /* 2 */ box-sizing: content-box; }
+
+/** Remove inner padding and search cancel button in Safari 5 and Chrome on OS X. */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/** 1. Remove default vertical scrollbar in IE 8/9. 2. Improve readability and alignment in all browsers. */
+textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
+
+/* ========================================================================== Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+table { border-collapse: collapse; border-spacing: 0; }
+/* ========================================================================== Typography ========================================================================== */
+body { font-family: "Microsoft YaHei","微软雅黑", "Microsoft Jhenghei","微軟正黑體", 'Meiryo', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; -webkit-text-size-adjust: none; text-rendering: optimizeLegibility; color: #444; }
+
+h1, h2, h3, h4, h5, h6 { margin-top: 0; color: #444; font-family: "Microsoft YaHei","微软雅黑", "Microsoft Jhenghei","微軟正黑體", 'Arimo', sans-serif; letter-spacing: 1px; }
+
+h1 { font-size: calc(1.375rem + 1.5vw); margin-bottom: vr(1); }
+
+h2 { font-size: calc(1.325rem + .9vw); margin-bottom: vr(1); }
+
+h3 { font-size: calc(1.3rem + .6vw); margin-bottom: vr(1); }
+
+h4 { font-size: calc(1.275rem + .3vw); margin-bottom: vr(1); }
+
+h5 { font-size: 1.25rem; }
+
+h6 { font-size: 1rem; }
+
+p, li { font-family: "Microsoft YaHei","微软雅黑",'Meiryo', "Microsoft Jhenghei","微軟正黑體", "新細明體", 'Roboto', Tahoma, Geneva, sans-serif; font-size: 1rem; line-height: 1.5; margin-bottom: vr(1); }
+
+th, td { font-size: 1rem; }
+
+p.small { font-size: 1rem; line-height: 1.5; }
+
+ul { line-height: 1; }
+
+ul li { margin-bottom: vr(0.25); }
+
+ul li:last-child { margin-bottom: 0; }
+
+/* ========================================================================== form ========================================================================== */
+/* ====================  input  ==================== */
+input[type="text"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="mail"]::-webkit-input-placeholder { color: #aaa; }
+input[type="text"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="mail"]:-ms-input-placeholder { color: #aaa; }
+input[type="text"]::-ms-input-placeholder, input[type="tel"]::-ms-input-placeholder, input[type="mail"]::-ms-input-placeholder { color: #aaa; }
+input[type="text"]::placeholder, input[type="tel"]::placeholder, input[type="mail"]::placeholder { color: #aaa; }
+
+/* ==================== Select ==================== */
+select::-webkit-input-placeholder { color: #aaa; }
+select:-ms-input-placeholder { color: #aaa; }
+select::-ms-input-placeholder { color: #aaa; }
+select::placeholder { color: #aaa; }
+
+/* ==================== textarea ==================== */
+textarea::-webkit-input-placeholder { color: #aaa; }
+textarea:-ms-input-placeholder { color: #aaa; }
+textarea::-ms-input-placeholder { color: #aaa; }
+textarea::placeholder { color: #aaa; }
+
+/* ==================== checkbox, radio ==================== */
+input.full[type="checkbox"], input.full[type="radio"] { -moz-appearance: none; border-radius: inherit; cursor: pointer; height: 100%; left: 0px; margin: 0; max-height: 100%; max-width: 100%; min-height: 100%; min-width: 100%; opacity: 0; outline: 0 none; position: absolute; top: 0px; width: 100%; z-index: 2; }
+
+/* ==================== Button ==================== */
+button:hover[type="button"], input:hover[type="button"], input:hover[type="submit"], input:hover[type="reset"] { -webkit-transform: scale(0.95); transform: scale(0.95); }
+
+/* ========================================================================== mixins ========================================================================== */
+/*************************************
+*              表格
+**************************************/
+table.style_table { margin: 0 0 20px 0; border-top: #78A221 1px solid; border-left: #78A221 1px solid; }
+
+table.style_table th, table.style_table td { padding: 8px 10px; border-right: #78A221 1px solid; border-bottom: #78A221 1px solid; }
+
+table.style_table thead tr th { color: #fff; background-color: #89B828; }
+
+table.style_table thead tr td { font-weight: bold; background-color: #89B828; }
+
+table.style_table tr.odd, table.style_table tbody.odd tr:nth-child(2n+2), table.style_table_left tbody.odd table.style_table tr:nth-child(2n+2) { background: #fcfdf8; }
+
+table.style_table_left { margin: 0 auto 20px auto; border-top: #78A221 1px solid; border-left: #78A221 1px solid; }
+
+table.style_table_left th, table.style_table_left td { padding: 8px 10px; text-align: center; border-right: #78A221 1px solid; border-bottom: #78A221 1px solid; }
+
+table.style_table_left th { color: #fff; background-color: #89B828; }
+
+table.style_table_left th.two { color: #fff; background-color: #6a8e1f; }
+
+table.style_table_left td.one { background-color: #eee; }
+
+table.style_table_left tr.odd, table.style_table tbody.odd table.style_table_left tr:nth-child(2n+2), table.style_table_left tbody.odd tr:nth-child(2n+2) { background: #fcfdf8; }
+
+.text_center { text-align: center; }
+
+.text_left { text-align: left; }
+
+.text_right { text-align: right; }
+
+img.center { margin: 0 auto; display: block; }
+
+.por { position: relative; }
+
+.poa { position: absolute; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+/* ========================================================================== Layout ========================================================================== */
+/* ************************************/
+/*              body                  */
+/**************************************/
+html { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+.row { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.row::after { display: block; clear: both; content: ""; }
+
+#content::after { display: block; clear: both; content: ""; }
+
+main { width: 90%; margin: 0 auto; }
+
+/* ************************************/
+/*              header                */
+/**************************************/
+header.header_web { width: 100%; padding: 20px 10px; text-align: center; background-color: #0B408E; }
+
+header.header_web .logo { width: 60px; height: 65px; margin-right: 10px; display: inline-block; vertical-align: middle; background: url(../images/LOGO.svg) no-repeat 0px 0px/cover; white-space: nowrap; text-indent: 150%; overflow: hidden; }
+
+header.header_web h3 { margin-right: 10px; margin-bottom: 0; color: #FBED11; display: inline-block; vertical-align: middle; font-weight: normal; }
+
+header.header_web h3 span { color: #fff; margin-right: 20px; }
+
+#D1:before, #D2:before, #D3:before, #D4:before { display: block; content: " "; margin-top: -60px; height: 60px; visibility: hidden; }
+
+/* ************************************/
+/*              footer                */
+/**************************************/
+footer { padding: 15px 0; margin-top: 15px; text-align: center; background-color: #fff; border-top: #0B408E 3px solid; }
+
+footer::after { display: block; clear: both; content: ""; }
+
+footer p { color: #666; }
+
+.copyright_box { padding: 5px 10px; text-align: center; color: #999; }
+
+select.form-select { height: 100%; max-height: 100%; padding: 0 10px; border-radius: 3px; background-color: #fff; border: #999 1px solid; }
+
+.btn_blue, .btn_blue2, .btn_red, .btn_orange { color: #fff; background-color: #3F83BF; border: none; border-radius: 5px; }
+
+.btn_blue2 { background-color: #7998CE; }
+
+.btn_red { background-color: #D15049; }
+
+.btn_orange { background-color: #ED9476; }
+
+.color_red { color: red; }
+
+.color_blue { color: #5C88BB; }
+
+.button_box { width: 100%; margin: 20px auto; display: block; text-align: center; }
+
+.button_box input, .button_box button { padding: 15px 25px; display: inline-block; }
+
+button { padding: 7px 15px; display: inline-block; }
+
+.layout_2 { display: -ms-grid; display: grid; grid-gap: 20px; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; }
+
+@media screen and (max-width: 768px) { .layout_2 { -ms-grid-columns: 1fr; grid-template-columns: 1fr; } }
+
+.layout_item_2 { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: .5fr 1fr; grid-template-columns: .5fr 1fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; grid-template-areas: "label_d input_d"; }
+
+.layout_item_2-1 { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: 1.02fr .98fr; grid-template-columns: 1.02fr .98fr; place-items: center; grid-template-areas: "label_d input_d" "w_d_100 w_d_100"; }
+
+.layout_item_2-i-1 { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: 1fr; grid-template-columns: 1fr; place-items: center; grid-template-areas: "label_d label_d" "input_d_100 input_d_100"; }
+
+.layout_item_3 { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: 1fr 1fr 1fr; grid-template-columns: 1fr 1fr 1fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; grid-template-areas: "label_d input_d txt_d"; }
+
+.layout_item_3-A { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: auto auto auto; grid-template-columns: auto auto auto; -webkit-box-align: center; -ms-flex-align: center; align-items: center; grid-template-areas: "label_d input_d txt_d"; }
+
+.layout_item_3-1 { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: auto auto auto; grid-template-columns: auto auto auto; place-items: center; grid-template-areas: "label_d input_d button_d" "text_d text_d text_d"; }
+
+@media screen and (max-width: 768px) { .layout_item_2-i-1 { -ms-grid-columns: 1fr; grid-template-columns: 1fr; grid-template-areas: "label_d" "input_d" "input_d_100"; }
+  .layout_item_3 { -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; grid-template-areas: "label_d label_d" "input_d txt_d"; }
+  .layout_item_3-1 { -ms-grid-columns: auto auto; grid-template-columns: auto auto; grid-template-areas: "label_d label_d" "input_d button_d" "text_d text_d"; } }
+
+h3.title_font { margin: 20px 0; display: inline-block; font-size: 1.3rem; color: #0B408E; font-weight: normal; }
+
+h3.title_font::before { content: ""; width: 10px; height: 25px; margin-right: 10px; vertical-align: bottom; display: inline-block; background-color: #0B408E; }
+
+.form_item { margin-bottom: 10px; }
+
+.form_item label { display: inline-block; color: #444; }
+
+.form_item label.title { width: 100%; padding: 5px 10px; min-height: 50px; -ms-grid-row: 1; -ms-grid-column: 1; grid-area: label_d; background-color: #D8D8D8; }
+
+.form_item label.title span.color_red { margin-right: 3px; display: inline-block; }
+
+.form_item label.title span.en { display: block; }
+
+.form_item input[type="text"] { width: 100%; min-height: 50px; display: inline-block; -ms-grid-row: 1; -ms-grid-column: 2; grid-area: input_d; }
+
+.form_item textarea { width: 100%; min-height: 190px; margin-top: 10px; }
+
+.form_item input.input_d_100[type="text"] { -ms-grid-row: 2; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: input_d_100; }
+
+.form_item .w_100 { -ms-grid-row: 2; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-area: w_d_100; }
+
+.form_item .w_100 p { margin: 0; }
+
+.form_item p.txt { margin: 0; -ms-grid-row: 1; -ms-grid-column: 3; grid-area: txt_d; }
+
+.form_item .text { padding: 10px 0 0; -ms-grid-row: 2; -ms-grid-column: 1; -ms-grid-column-span: 3; grid-area: text_d; }
+
+.form_item .text p { margin: 0; }
+
+.form_item .button_d + .text { padding-top: 0; }
+
+.form_item img { vertical-align: middle; }
+
+.form_item button.button_d { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: button_d; }
+
+.declare input[type="radio"] { width: 20px; height: 20px; margin-top: 3px; display: inline-block; vertical-align: top; }
+
+.declare label { width: 92%; display: inline-block; color: #444; }
+
+.declare p { margin: 0; }
+
+.declare a { text-decoration: none; }
+
+.declare a:hover { text-decoration: underline; }
+
+/* ========================================================================== Activity Page ========================================================================== */
+/* ========================================================================== Plug mixins ========================================================================== */
+/* ========================================================================== responsive mixins ========================================================================== */
+/*# sourceMappingURL=all.css.map */

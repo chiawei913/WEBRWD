@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺北市警察局 網路報案</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" sizes="192x192" href="images/ico.jpg" />
+
+
+    <!-- CSS only -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+
+    <script src="js/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+<!-- container start -->
+<div id="container">
+
+    <!-- content start -->
+    <div id="content">
+        <main class="PeaceAdd">
+
+
+            <form action="">
+
+                <article class="case_user">
+
+                    <p>Application for「Anti-Burglary Adviser」Service</p>
+                    <ul class="ul_page">
+                        <li>1. Qualified applicants: Residents of Taipei City</li>
+                        <li>2. Service Hours: Office Hour, 365 Days a Year</li>
+                        <li>3. Contact: Crime Prevention Division, Taipei City Police Department</li>
+                    </ul>
+                    <p>Address: No.96, Yan-ping South Road, Taipei City 10042,Taiwan (R.O.C.)</p>
+                    <p>Fax Number: 23319584</p>
+
+                    <p>This Service is Free !</p>
+
+                    <p>You may fill out the application form and on- line, but be sure to memorize your secret "code" and "ID number" so that you may <a href="PeaceSearch.aspx">check your application status.</a> Thank you.</p>
+
+                    <p>You must provide information for items with the symbol " <span class="color_red">*</span> ".</p>
+                    <p>Anti-Burglary Adviser Service | <a href="PeaceSearch.aspx">Check Your Application Status</a></p>
+
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>I am a Taipei City Resident：</label>
+                        <select name="ddlCitizen" id="ddlCitizen" class="form-select">
+                            <option value="Y">Yes</option>
+                            <option value="N">No</option>
+                        </select>
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator2" class="color_red" style="display: none;">Must Provide Information For Taipei City Resident</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>Name：</label>
+                        <input name="txtUser_name" id="txtUser_name" type="text" class="form-control" autocomplete="off" >
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator3" class="color_red" style="display: none;">Must Provide Information For Name</span>
+                    </div>
+    
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>Gender：</label>
+                        <div class="type_radio">
+                            <input id="genderM" class="form-check-input" type="radio" name="gernder" value="genderM" checked="checked">
+                            <label class="form-check-label" for="genderM">Male</label>
+                            <input id="genderF" class="form-check-input" type="radio" name="gernder" value="genderF">
+                            <label class="form-check-label" for="genderF">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>Age：</label>
+                        <input name="txtUser_year" id="txtUser_year" type="text" class="form-control" autocomplete="off">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator10" class="color_red" style="display: none;">Must Provide Information For Age</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>ID Number：</label>
+                        <input name="txtUser_ssn" id="txtUser_ssn" type="text" class="form-control" autocomplete="off">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator5" class="color_red" style="display: none;">Must Provide Information For ID Number</span>
+                    </div>
+
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>Address to be Examined：</label>
+                        <div class="layout_PA_item_2-3">
+                            <select name="ddlAddress_area" id="ddlAddress_area" class="form-select">
+                                <option value="">---Select Please---</option>
+                                <option value="松山區">Songshan District Taipei City</option>
+                                <option value="信義區">Xinyi District Taipei City</option>
+                                <option value="大安區">Daan District Taipei City</option>
+                                <option value="中山區">Zhongshan District Taipei City</option>
+                                <option value="中正區">Zhongzheng District Taipei City</option>
+                                <option value="大同區">Datong District Taipei City</option>
+                                <option value="萬華區">Wanhua District Taipei City</option>
+                                <option value="文山區">Wenshan District Taipei City</option>
+                                <option value="南港區">Nangang District Taipei City</option>
+                                <option value="內湖區">Neihu District Taipei City</option>
+                                <option value="士林區">Shilin District Taipei City</option>
+                                <option value="北投區">Beitou District Taipei City</option>
+                            </select>
+                            <input name="txtAddress" id="txtAddress" type="text" class="form-control" placeholder="ex:7th floor, No. 96 Yanping South Road, please use half-sized Arabic numerals.">
+                        </div>
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator4" class="color_red" style="display: none;">Must Provide Information For Address</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>Date Available for Examination：</label>
+                        <div class="layout_PA-En_item_3-2">
+                            <input name="txtSchedule_date" id="txtSchedule_date" type="text" class="form-control" placeholder="example:2018-01-01">
+                            Examined Time：
+                            <select name="ddlSchdule_time" id="ddlSchdule_time" class="form-select">
+                                <option value="上午">Morning</option>
+	                            <option value="下午">Afternoon</option>
+                            </select>
+                        </div>
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator6" class="color_red" style="display: none;">Must Provide Information For Examined Date</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>House has been stolen：</label>
+                        <div class="layout_PA-En_item_3-3">
+                            <select name="ddlSteal" id="ddlSteal" class="form-select">
+                                <option value="Y">Yes</option>
+                                <option value="N">No</option>
+                            </select> 
+                            Stolen Date：
+                            <input name="txtSteal_date" id="txtSteal_date" type="text" class="form-control" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>Cell Phone Number：</label>
+                        <input name="txtMobile" id="txtMobile" type="text" class="form-control">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator8" class="color_red" style="display: none;">Must Provide Information For Cell Phone Number</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>Telephone Number：</label>
+                        <input name="txtPhone" id="txtPhone" type="text" class="form-control">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator7" class="color_red" style="display: none;">Must Provide Information For Telephone Number</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title">E-Mail：</label>
+                        <input name="txtEmail" id="txtEmail" type="text" class="form-control" autocomplete="off">
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>Applicant's status：</label>
+                        <select name="ddlUser_category" id="ddlUser_category" class="form-select">
+                            <option value="現住房屋所有人">Owner of the house</option>
+                            <option value="現租人">tenant</option>
+                            <option value="前兩者同戶籍之眷屬並具有法律行為能力者">family members above capable of legal behavior</option>
+                        </select>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>Have you use this Service before：</label>
+                        <div class="type_radio">
+                            <input id="peacebefore1" name="peacebefore" value="peacebefore1" class="form-check-input" type="radio" checked="checked">
+                            <label for="peacebefore1" class="form-check-label" >Yes</label>
+                            <input id="peacebefore2" name="peacebefore" value="peacebefore2" class="form-check-input" type="radio" >
+                            <label for="peacebefore2" class="form-check-label" >No</label>
+                        </div>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>Enter Verification Codes：</label>
+                        <div class="layout_PA_item_3-A">
+                            <input name="txtCaptcha" id="txtCaptcha" type="text" class="form-control" autocomplete="off">
+                            <img src="/ValidatePage.aspx" alt="點擊刷新" id="imgValidateCode" style="width: 100px; height: 30px; line-height: 30px; vertical-align: middle;" />
+                            <span id="RequiredFieldValidator13" class="color_red" style="display: none;">請輸入驗證碼</span>                                
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="button_box">
+                        <input type="submit" name="btnSubmit" value="Submit" onclick="return confirm(&#39;Are you sure to submit？&#39;);WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;addGroup&quot;, &quot;&quot;, false, false))" id="btnSubmit" class="system_form_box button btn_blue" />
+                        <input type="submit" name="btnReset" value="Reset" onclick="return confirm(&#39;Are you sure you want to reset？&#39;);" id="btnReset" class="system_form_box button btn_red" />
+                </div>
+
+                <div id="div2" class="system_form_box" style="display: none;">
+                    <strong>
+                    <p class="color_red">You have completed the application form !!</p>
+                    <p>Your Application Number：<span class="color_blue"><span id="lblActivate_no"></span></span></p>
+                    <p>Thank you very much !!</p>
+                    </strong>
+                    <button type="button" onclick="location.href='PeaceENAdd.aspx'" style="text-align:center">Return Anti-Burglary Adviser Service</button>
+                    <button type="button" onclick="location.href='PeaceSearch.aspx'" style="text-align:center">Return Check Your Application Status</button>
+               </div>                
+
+            </form>
+        </main>
+    </div>
+    <!-- content end -->
+
+</div>
+<!-- container end -->
+
+<!-- ================ jvascript ================ -->
+
+<!-- bootstrap js -->
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

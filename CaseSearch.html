@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺北市警察局 網路報案</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" sizes="192x192" href="images/ico.jpg" />
+
+
+    <!-- CSS only -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+
+    <script src="js/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+<!-- container start -->
+<div id="container">
+
+    <!-- content start -->
+    <div id="content">
+        <main class="CaseSearch">
+
+            <h4>查詢使用須知 Case Inquiry System</h4>
+            <p>
+                歡迎進入查詢作業系統，請輸入「<span class="color_red">案件編號</span>」及「<span class="color_red">查詢識別密碼</span>」，俾利查詢作業，瞭解案件目前處理情況，竭誠歡迎您使用，謝謝！！（本局僅提供民眾查詢95年之後之網路報案資料）<br />
+                Welcome to the Case Inquiry System. Please enter your 「<span class="color_red">case number</span>」 and 「<span class="color_red">inquiry identification code</span>」 to check the case status. The Department only provides access to online police reporting data dated after 2006.
+            </p>
+
+
+
+            <form action="">
+
+                <article class="case_user">
+
+                    <h3>查詢案件處理進度<br/>Check My Case Status</h3>
+
+                    <div class="page_form_item layout_CS_item_2">
+                        <label for="" class="form-label title"><span class="color_red">*</span>案件編號：<span class="en">Case Number</span></label>
+                        <input name="txtActivate_no" type="text" id="txtActivate_no" class="form-control Date" autocomplete="off">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator10" class="color_red" style="display: none;">案件編號必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_CS_item_2">
+                        <label for="" class="form-label title"><span class="color_red">*</span>查詢識別密碼：<span class="en">Inquiry Identification Code</span></label>
+                        <input name="txtActivate_passwd" type="text" id="txtActivate_passwd" class="form-control Date" autocomplete="off">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator1" class="color_red" style="display: none;">查詢識別密碼必填</span>
+                    </div>
+    
+
+                </article>
+
+                <div class="button_box">
+                    <input type="submit" name="btnSubmit" value="送出Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;addGroup&quot;, &quot;&quot;, false, false))" id="btnSubmit" class="system_form_box button btn_blue">
+                    <input type="submit" name="btnReset" value="重設Reset" id="btnReset" class="system_form_box button btn_red">
+                </div>
+
+
+            </form>
+        </main>
+    </div>
+    <!-- content end -->
+
+</div>
+<!-- container end -->
+
+<!-- ================ jvascript ================ -->
+
+<!-- bootstrap js -->
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

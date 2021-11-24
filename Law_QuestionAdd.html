@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺北市警察局 網路報案</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" sizes="192x192" href="images/ico.jpg" />
+
+
+    <!-- CSS only -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+
+    <script src="js/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+<!-- container start -->
+<div id="container">
+
+    <!-- content start -->
+    <div id="content">
+        <main class="LQ-Add">
+
+            <h5>警政法令問題諮詢專用信箱</h5>
+            <p>紅色 <span class="color_red">*</span> 號為必填欄位，請務必填寫正確資料，謝謝；無具體之內容或未具真實姓名或住址者，依行政程序法第 173 條規定，歉難處理。</p>
+
+            <form action="">
+
+                <article class="case_user">
+
+                    <h5>個人資料</h5>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>姓名：</label>
+                        <input name="txtName" type="text" id="txtName" class="form-control" autocomplete="off" />
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator3" class="color_red" style="display: none;">姓名必填</span>
+                    </div>
+    
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>性別</label>
+                        <div class="type_radio">
+                            <input id="genderM" class="form-check-input" type="radio" name="gernder" value="genderM" checked="checked">
+                            <label class="form-check-label" for="genderM">男 Male</label>
+                            <input id="genderF" class="form-check-input" type="radio" name="gernder" value="genderF">
+                            <label class="form-check-label" for="genderF">女 Female</label>
+                        </div>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>身分證字號：</label>
+                        <input name="txtCard_id" id="txtCard_id" type="text" class="form-control" autocomplete="off">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator5" class="color_red" style="display: none;">身分證字號必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>生日：</label>
+                        <input name="txtBirthday" type="text" id="txtBirthday" class="form-control" autocomplete="off" />
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator10" class="color_red" style="display: none;">生日必填</span>
+                    </div>
+    
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>地址：</label>
+                        <input name="txtAddress" type="text" id="txtAddress" class="form-control" autocomplete="off" />
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator2" class="color_red" style="display: none;">地址必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>聯絡電話(住家)：(02)</label>
+                        <input name="txtTel_h" id="txtTel_h" type="text" class="form-control" autocomplete="off">
+                        <span id="RequiredFieldValidator6" class="color_red" style="display: none;">行聯絡電話(住家)必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title">聯絡電話(辦公室)：(02)</label>
+                        <input name="txtTel_o" id="txtTel_o" type="text" class="form-control" autocomplete="off">
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title">行動電話：</label>
+                        <input name="txtPhone" id="txtPhone" type="text" class="form-control" autocomplete="off">
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title">傳真：</label>
+                        <input name="txtFax" id="txtFax" type="text" class="form-control" autocomplete="off">
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>E-Mail：</label>
+                        <input name="txtMail" id="txtMail" type="text" class="form-control" autocomplete="off">
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator7" class="color_red" style="display: none;">Email必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>身分：</label>
+                        <div class="type_radio2">
+                            <div>
+                                <input id="genderM" class="form-check-input" type="radio" name="gernder" value="genderM" checked="checked">
+                                <label class="form-check-label" for="genderM">民眾</label>
+                            </div>
+                            <div>
+                                <input id="genderF" class="form-check-input" type="radio" name="gernder" value="genderF">
+                                
+                                <label class="form-check-label" for="genderF">員警</label>
+                                <span class="box_Police_item">
+                                (
+                                職稱 <input name="txtProfessional" id="txtProfessional" type="text" class="form-control" autocomplete="off" />
+                                服務單位 <input name="txtDepartment" id="txtDepartment" type="text" class="form-control" autocomplete="off" />
+                                ) 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page_form_item">
+                        <label class="form-label title"><span class="color_red">*</span>諮詢內容：請簡要摘述勿超過750個中文字(1,500個字元)；發現違法行為，請直接撥打 110 電話報案。</label>
+                        <textarea name="txtAsk_contents" rows="10" cols="90" id="txtAsk_contents" class="form-control" autocomplete="off"></textarea>
+                        <span style="display: none;"></span>
+                        <span id="RequiredFieldValidator12" class="color_red" style="display: none;">諮詢內容必填</span>
+                    </div>
+
+                    <div class="page_form_item layout_PA_item_2">
+                        <label class="form-label title"><span class="color_red">*</span>請輸入驗證碼：</label>
+                        <div class="layout_PA_item_3-A">
+                            <input name="txtCaptcha" id="txtCaptcha" type="text" class="form-control" autocomplete="off">
+                            <img src="/ValidatePage.aspx" alt="點擊刷新" id="imgValidateCode" style="width: 100px; height: 30px; line-height: 30px; vertical-align: middle;" />
+                            <span id="RequiredFieldValidator13" class="color_red" style="display: none;">請輸入驗證碼</span>                                
+                        </div>
+                    </div>
+
+                    <div class="declare">
+                        <input class="form-check-input" type="radio" name="CheckBox1" id="CheckBox1">
+                        <label class="form-check-label">
+                            <p>我已閱讀本局<a target="_blank" href="https://police.gov.taipei/ct.asp?xItem=8259905&ctNode=47044&mp=108001" class="color_blue">【個人資料收集聲明及服務條款】</a> 暨相關 <a target="_blank" href="https://police.gov.taipei/ct.asp?xItem=3580328&ctNode=45108&mp=108001" class="color_blue">【隱私權政策】</a></p>
+                        </label>
+                    </div>
+
+
+                </article>
+
+                <div class="button_box">
+                    <input type="submit" name="btnSubmit" value="送出" onclick="return confirm(&#39;確定送出嗎？&#39;);WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;addGroup&quot;, &quot;&quot;, false, false))" id="btnSubmit" class="system_form_box button btn_blue" />
+                    <input type="submit" name="btnReset" value="重設" onclick="return confirm(&#39;確定重設嗎？&#39;);" id="btnReset" class="system_form_box button btn_red" />
+                </div>
+
+                <div id="div2" class="system_form_box" style="display:none">
+                    <strong>
+                        <p><span class="color_blue"><span id="lblName"></span></span> 先生/小姐 您好：</p>
+                        <p class="color_red">您的資料已送出！</p>
+                        <p>已收到您的諮詢！我們將會儘快答覆您的問題！</p>
+                        <p>再次感謝您！</p>                
+                    </strong>
+       
+                    <button type="button" onclick="location.href='Law_QuestionAdd.aspx'" style="text-align:center">返回警政法令問題諮詢網</button>
+                    <button type="button" onclick="location.href='Law_Construe.aspx'" style="text-align:center">返回警政法令釋示列表</button>
+               </div>
+
+            </form>
+        </main>
+    </div>
+    <!-- content end -->
+
+</div>
+<!-- container end -->
+
+<!-- ================ jvascript ================ -->
+
+<!-- bootstrap js -->
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
