@@ -251,7 +251,19 @@ footer p { color: #666; }
 
 .copyright_box { padding: 5px 10px; text-align: center; color: #999; }
 
-select.form-select { height: 100%; max-height: 100%; padding: 0 10px; border-radius: 3px; background-color: #fff; border: #999 1px solid; }
+select.form-select { height: 100%; min-height: 50px; max-height: 100%; padding: 15px 0; border-radius: 3px; background-color: #fff; border: #999 1px solid; }
+
+.type_radio { min-height: 50px; padding: 10px; }
+
+.type_radio label { margin-right: 20px; }
+
+.type_radio input[type="radio"] { width: 25px; height: 25px; margin-right: 3px; vertical-align: middle; }
+
+.type_radio2 div { display: block; }
+
+.type_radio2 div input[type="text"] { width: auto; min-height: auto; }
+
+.type_radio2 div input[type="radio"] { width: 25px; height: 25px; margin-right: 3px; vertical-align: middle; }
 
 .btn_blue, .btn_blue2, .btn_red, .btn_orange { color: #fff; background-color: #3F83BF; border: none; border-radius: 5px; }
 
@@ -265,12 +277,33 @@ select.form-select { height: 100%; max-height: 100%; padding: 0 10px; border-rad
 
 .color_blue { color: #5C88BB; }
 
-.button_box { width: 100%; margin: 20px auto; display: block; text-align: center; }
+ul.ul_page { padding: 0 0 0 15px; }
+
+.button_box { width: 100%; margin: 30px auto; display: block; text-align: center; }
 
 .button_box input, .button_box button { padding: 15px 25px; display: inline-block; }
 
 button { padding: 7px 15px; display: inline-block; }
 
+.page_form_item { margin-bottom: 10px; }
+
+.page_form_item label { display: inline-block; color: #444; }
+
+.page_form_item label.title { width: 100%; padding: 15px 10px; background-color: #D8D8D8; }
+
+.page_form_item label.title span.color_red { margin-right: 3px; display: inline-block; }
+
+.page_form_item label.title span.en { display: block; }
+
+.page_form_item textarea { width: 100%; margin-top: 10px; }
+
+.page_form_item input[type="text"] { width: 100%; min-height: 50px; display: inline-block; }
+
+.system_form_box { padding: 20px; margin: 0px auto 40px; text-align: center; border: #aaa 1px solid; border-radius: 10px; }
+
+/* ************************************/
+/*               網路報案              */
+/**************************************/
 .layout_2 { display: -ms-grid; display: grid; grid-gap: 20px; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; }
 
 @media screen and (max-width: 768px) { .layout_2 { -ms-grid-columns: 1fr; grid-template-columns: 1fr; } }
@@ -327,6 +360,8 @@ h3.title_font::before { content: ""; width: 10px; height: 25px; margin-right: 10
 
 .form_item button.button_d { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: button_d; }
 
+.declare { min-height: 50px; padding: 15px 0; }
+
 .declare input[type="radio"] { width: 20px; height: 20px; margin-top: 3px; display: inline-block; vertical-align: top; }
 
 .declare label { width: 92%; display: inline-block; color: #444; }
@@ -336,6 +371,95 @@ h3.title_font::before { content: ""; width: 10px; height: 25px; margin-right: 10
 .declare a { text-decoration: none; }
 
 .declare a:hover { text-decoration: underline; }
+
+/* ************************************/
+/*              CaseSearch            */
+/**************************************/
+.layout_CS_item_2, .layout_PA_item_3-1, .layout_PA_item_3-2, .layout_PA-En_item_3-2, .layout_PA-En_item_3-3, .layout_PA_item_3-3, .layout_PA_item_3-A, .layout_PA_item_2, .layout_PA_item_2-1fr, .layout_PA_item_2-1, .layout_PA_item_2-2, .layout_PA_item_2-3 { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: .5fr 1fr; grid-template-columns: .5fr 1fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+@media screen and (max-width: 768px) { .layout_CS_item_2, .layout_PA_item_3-1, .layout_PA_item_3-2, .layout_PA-En_item_3-2, .layout_PA-En_item_3-3, .layout_PA_item_3-3, .layout_PA_item_3-A, .layout_PA_item_2, .layout_PA_item_2-1fr, .layout_PA_item_2-1, .layout_PA_item_2-2, .layout_PA_item_2-3 { -ms-grid-columns: 1fr; grid-template-columns: 1fr; } }
+
+.CaseSearch { margin: 40px auto 20px; }
+
+.CaseSearch > h4 { margin: 0 auto 20px; text-align: center; color: #800000; }
+
+.CaseSearch .case_user { width: 80%; margin: 0 auto; }
+
+.CaseSearch .case_user h3 { margin: 40px auto 20px; text-align: center; }
+
+.CaseSearch .case_user .page_form_item label.title { padding: 3px 10px; }
+
+.page_layout_item_2 { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: .5fr 1fr; grid-template-columns: .5fr 1fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.page_layout_item_2-A { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: auto auto; grid-template-columns: auto auto; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.page_layout_item_3 { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: .5fr 1fr 1fr; grid-template-columns: .5fr 1fr 1fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.page_layout_item_3-A { display: -ms-grid; display: grid; grid-gap: 10px; -ms-grid-columns: auto auto auto; grid-template-columns: auto auto auto; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+/* ************************************/
+/*              PeaceAdd              */
+/**************************************/
+.layout_PA_item_3-1 { -ms-grid-columns: 70px 60px auto; grid-template-columns: 70px 60px auto; }
+
+.layout_PA_item_3-2 { -ms-grid-columns: 70px 80px auto; grid-template-columns: 70px 80px auto; }
+
+.layout_PA-En_item_3-2 { -ms-grid-columns: 170px 140px auto; grid-template-columns: 170px 140px auto; }
+
+.layout_PA-En_item_3-3 { -ms-grid-columns: 70px 110px auto; grid-template-columns: 70px 110px auto; }
+
+.layout_PA_item_3-3 { -ms-grid-columns: 70px 100px auto; grid-template-columns: 70px 100px auto; }
+
+.layout_PA_item_3-A { -ms-grid-columns: auto auto auto; grid-template-columns: auto auto auto; }
+
+.layout_PA_item_2 { -ms-grid-columns: .35fr 1fr; grid-template-columns: .35fr 1fr; }
+
+.layout_PA_item_2-1fr { -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; }
+
+.layout_PA_item_2-1 { -ms-grid-columns: auto 80px; grid-template-columns: auto 80px; }
+
+.layout_PA_item_2-2 { -ms-grid-columns: 80px auto; grid-template-columns: 80px auto; }
+
+.layout_PA_item_2-3 { -ms-grid-columns: .45fr 1fr; grid-template-columns: .45fr 1fr; }
+
+@media screen and (max-width: 768px) { .layout_PA_item_2, .layout_PA_item_2-3, .layout_PA-En_item_3-2, .layout_PA-En_item_3-3 { -ms-grid-columns: 1fr; grid-template-columns: 1fr; } }
+
+.PeaceAdd { margin: 40px auto 20px; }
+
+.PeaceAdd .form_item label.title { min-height: auto; padding: 15px 10px; }
+
+/* ************************************/
+/*          Law_QuestionAdd           */
+/**************************************/
+.LQ-Add { margin: 40px auto 20px; }
+
+.type_radio2 div { margin: 0 20px 5px 0; display: inline-block; }
+
+@media screen and (max-width: 768px) { .type_radio2 div { display: block; }
+  .type_radio2 div span.box_Police_item { display: block; }
+  .type_radio2 div span.box_Police_item input[type="text"] { width: 29%; padding: 15px 5px; margin-right: 10px; } }
+
+/* ************************************/
+/*                結案頁面             */
+/**************************************/
+.page_end { width: 80%; margin: 40px auto 20px; text-align: center; }
+
+.page_end ul { padding: 0; margin: 0; list-style: none; }
+
+.page_end li { display: -ms-grid; display: grid; grid-gap: 1px; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; }
+
+.page_end li div { min-height: 50px; padding: 11px 10px; background-color: #eee; border: #fff 1px solid; }
+
+.page_end li .title_font { text-align: right; }
+
+.page_end li .content { text-align: left; }
+
+.page_end input { padding: 15px 10px; margin: 10px auto; }
+
+@media screen and (max-width: 768px) { .page_end { width: 100%; }
+  .page_end li { margin-bottom: 10px; -ms-grid-columns: 1fr; grid-template-columns: 1fr; }
+  .page_end li div { min-height: auto; }
+  .page_end li .title_font { text-align: left; } }
 
 /* ========================================================================== Activity Page ========================================================================== */
 /* ========================================================================== Plug mixins ========================================================================== */
