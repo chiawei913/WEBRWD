@@ -116,9 +116,9 @@ textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 /** Remove most spacing between table cells. */
 table { border-collapse: collapse; border-spacing: 0; }
 /* ========================================================================== Typography ========================================================================== */
-body { font-family: "Microsoft YaHei","微软雅黑", "Microsoft Jhenghei","微軟正黑體", 'Meiryo', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; -webkit-text-size-adjust: none; text-rendering: optimizeLegibility; color: #444; }
+body { font-family: "Microsoft YaHei","微软雅黑", "Microsoft Jhenghei","微軟正黑體", 'Meiryo', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; -webkit-text-size-adjust: none; text-rendering: optimizeLegibility; color: #171717; }
 
-h1, h2, h3, h4, h5, h6 { margin-top: 0; color: #444; font-family: "Microsoft YaHei","微软雅黑", "Microsoft Jhenghei","微軟正黑體", 'Arimo', sans-serif; letter-spacing: 1px; }
+h1, h2, h3, h4, h5, h6 { margin-top: 0; color: #171717; font-family: "Microsoft YaHei","微软雅黑", "Microsoft Jhenghei","微軟正黑體", 'Arimo', sans-serif; letter-spacing: 1px; }
 
 h1 { font-size: calc(1.375rem + 1.5vw); margin-bottom: vr(1); }
 
@@ -219,6 +219,8 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 *, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
 
+body { background-color: #f0f8ff; }
+
 .row { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .row::after { display: block; clear: both; content: ""; }
@@ -243,7 +245,7 @@ header.header_web h3 span { color: #fff; margin-right: 20px; }
 /* ************************************/
 /*              footer                */
 /**************************************/
-footer { padding: 15px 0; margin-top: 15px; text-align: center; background-color: #fff; border-top: #0B408E 3px solid; }
+footer { padding: 15px 0; margin-top: 15px; text-align: center; background-color: #f0f8ff; border-top: #0B408E 3px solid; }
 
 footer::after { display: block; clear: both; content: ""; }
 
@@ -287,9 +289,9 @@ button { padding: 7px 15px; display: inline-block; }
 
 .page_form_item { margin-bottom: 10px; }
 
-.page_form_item label { display: inline-block; color: #444; }
+.page_form_item label { display: inline-block; color: #0A0A0A; }
 
-.page_form_item label.title { width: 100%; padding: 15px 10px; background-color: #D8D8D8; }
+.page_form_item label.title { width: 100%; padding: 15px 10px; background-color: #b0c4de; }
 
 .page_form_item label.title span.color_red { margin-right: 3px; display: inline-block; }
 
@@ -330,9 +332,9 @@ h3.title_font::before { content: ""; width: 10px; height: 25px; margin-right: 10
 
 .form_item { margin-bottom: 10px; }
 
-.form_item label { display: inline-block; color: #444; }
+.form_item label { display: inline-block; color: #0A0A0A; }
 
-.form_item label.title { width: 100%; padding: 5px 10px; min-height: 50px; -ms-grid-row: 1; -ms-grid-column: 1; grid-area: label_d; background-color: #D8D8D8; }
+.form_item label.title { width: 100%; padding: 5px 10px; min-height: 50px; -ms-grid-row: 1; -ms-grid-column: 1; grid-area: label_d; background-color: #b0c4de; }
 
 .form_item label.title span.color_red { margin-right: 3px; display: inline-block; }
 
@@ -364,7 +366,7 @@ h3.title_font::before { content: ""; width: 10px; height: 25px; margin-right: 10
 
 .declare input[type="radio"] { width: 20px; height: 20px; margin-top: 3px; display: inline-block; vertical-align: top; }
 
-.declare label { width: 92%; display: inline-block; color: #444; }
+.declare label { width: 92%; display: inline-block; color: #0A0A0A; }
 
 .declare p { margin: 0; }
 
@@ -460,6 +462,11 @@ h3.title_font::before { content: ""; width: 10px; height: 25px; margin-right: 10
   .page_end li { margin-bottom: 10px; -ms-grid-columns: 1fr; grid-template-columns: 1fr; }
   .page_end li div { min-height: auto; }
   .page_end li .title_font { text-align: left; } }
+
+/* ************************************/
+/*             PeaceSearch            */
+/**************************************/
+.PeaceSearch .layout_2 { width: 50%; margin: 0 auto 10px; -ms-grid-columns: .5fr .5fr; grid-template-columns: .5fr .5fr; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 /* ========================================================================== Activity Page ========================================================================== */
 /* ========================================================================== Plug mixins ========================================================================== */
